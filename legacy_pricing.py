@@ -19,7 +19,9 @@ def loyalty_discount_percent(previous_orders):
     """
     if previous_orders < 3:
         return 0
-    elif previous_orders > 10:
+    # elif previous_orders > 10:
+    # fixed
+    elif previous_orders >= 10:
         return 10
     else:
         return 5
